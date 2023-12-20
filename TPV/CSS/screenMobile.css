@@ -1,0 +1,20 @@
+@media screen and (max-width: 47rem) {
+  * {
+    font-size: 13px;
+  }
+  #menu-btn {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  aside {
+    display: none;
+  }
+  #sidebar {
+    height: calc(100% - (-7%));
+  }
+  footer {
+    height: 6%;
+  }
+}
