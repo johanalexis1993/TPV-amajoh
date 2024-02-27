@@ -1,0 +1,17 @@
+input,
+select,
+button {
+  margin: 0.19rem;
+  padding: 0.3rem;
+  border: 0.07rem solid var(--th-td-input-select-button);
+  border-radius: var(--border-radius);
+}
+button {
+  background-color: var(--background-button);
+  color: var(--text-white);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+button:hover {
+  background-color: var(--button-hover);
+}

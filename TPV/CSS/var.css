@@ -1,0 +1,16 @@
+:root {
+  --background-scroll: #555;
+  --background-body: #f2f2f2;
+  --header-footer-color: #34495e;
+  --background-sidebar: #2c3e50;
+  --text-white: #ecf0f1;
+  --link-hover-color: #1f2c35;
+  --th-td-input-select-button: #ccc;
+  --border-radius: 0.25rem;
+  --fieldset-h1: #447a17;
+  --background-button: #3498db;
+  --button-hover: #2980b9;
+  --padding: 1.25rem;
+  --margin: 0.32rem;
+  --margin2: 0.62rem;
+}

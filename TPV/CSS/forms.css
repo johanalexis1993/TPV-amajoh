@@ -1,0 +1,11 @@
+form {
+  margin: 0 auto;
+  display: inline;
+}
+fieldset {
+  box-shadow: var(--margin) var(--margin) var(--margin2) var(--link-hover-color);
+  color: var(--fieldset-h1);
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}

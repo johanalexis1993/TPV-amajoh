@@ -1,0 +1,29 @@
+@media screen and (max-width: 23.5rem) {
+  html {
+    font-size: 9px;
+    font-weight: 800;
+  }
+  #menu-btn {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  button {
+    border-radius: 0.5rem;
+  }
+  fieldset button {
+    width: 12.5rem;
+  }
+  aside {
+    height: calc(100% - (-7%));
+  }
+  footer {
+    height: 6%;
+  }
+}

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta
+      name="keywords"
+      content="TPV gratis,mejorar negocio,amajoh,economico,AMAJOH TPV,TPV para empresas pequeñas"
+    />
+    <meta name="author" content="Johan Alexis" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="una solucion para pequeñas empresas,justo para emprendedores y muy economico aparte de ser completa y para todo tipo de negocios"
+    />
+    <link rel="canonical" href="http://localhost/tpv-restaurante/" />
+    <link rel="icon" href="./ASSETS/amajoh.webp" type="icon" />
+    <link rel="stylesheet" href="./CSS/general.css" />
+    <link rel="stylesheet" href="./CSS/var.css" />
+    <link rel="stylesheet" href="./CSS/layout.css" />
+    <link rel="stylesheet" href="./CSS/header-footer.css" />
+    <link rel="stylesheet" href="./CSS/sidebar.css" />
+    <link rel="stylesheet" href="./CSS/scrollbar.css" />
+    <link rel="stylesheet" href="./CSS/images.css" />
+    <link rel="stylesheet" href="./CSS/forms.css" />
+    <link rel="stylesheet" href="./CSS/tables.css" />
+    <link rel="stylesheet" href="./CSS/buttons.css" />
+    <link rel="stylesheet" href="./CSS/headings.css" />
+    <link rel="stylesheet" href="./CSS/screenMobile.css" defer />
+    <title>AMAJOH TPV</title>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" id="menu-btn">&#9776; Menú</label>
+      <h1>Amajoh TPV</h1>
+    </header>
+    <main>
+      <aside class="hidden">
+        <a href="menuDigital.html" id="enlace-menuDigital">Menu Digital</a>
+        <a href="#" id="enlace-inventario">Inventario</a>
+        <a href="#" id="enlace-estadisticasVentas">Estadísticas de Ventas</a>
+        <a href="#" id="enlace-configuracionTPV">Configuración del TPV</a>
+        <a href="#" id="enlace-clientes">Clientes</a>
+        <a href="#" id="enlace-caja">Caja</a>
+        <a href="#" id="enlace-promocionesDescuentos"
+          >Promociones y Descuentos</a
+        >
+        <a href="#" id="enlace-reportesFinancieros">Reportes Financieros</a>
+        <a href="#" id="enlace-gestionPersonal">Gestión de Personal</a>
+        <a href="#" id="enlace-configuracionRestaurante"
+          >Configuración del Restaurante</a
+        >
+        <a href="#" id="enlace-ayuda">Ayuda</a>
+        <a href="#" id="enlace-contacto">Contacto</a>
+      </aside>
+      <article>
+        <section id="menuDigital">
+          <form
+            action="/"
+            name="menu"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+            accept-charset="UTF-8"
+            autocomplete="on"
+          >
+            <fieldset>
+              <legend><strong>Ingresar datos del menu</strong></legend>
+              <label for="sessionName">Nombre de la secion:</label>
+              <input
+                type="text"
+                id="sessionName"
+                name="sessionName"
+                value
+                required
+              />
+              <label for="sessionContent">Contenido de la sesión:</label>
+              <input
+                type="text"
+                id="sessionContent"
+                name="sessionContent"
+                required
+              />
+              <label for="sessionPrice">Precio:</label>
+              <input
+                type="number"
+                id="sessionPrice"
+                name="sessionPrice"
+                required
+              />
+              <button type="submit">Agregar a menu digital</button>
+            </fieldset>
+          </form>
+        </section>
+        <section id="inventario">
+          <form
+            action="/"
+            name="inventario"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+            accept-charset="UTF-8"
+            autocomplete="on"
+          >
+            <fieldset>
+              <legend><strong>Ingresar datos de inventarios</strong></legend>
+              <label for="product">Producto:</label>
+              <input type="text" id="product" name="product" value required />
+              <label for="cantidad">Cantidad:</label>
+              <input type="number" id="cantidad" name="cantidad" required />
+              <label for="precio">Precio:</label>
+              <input type="number" id="precio" name="precio" required />
+              <label for="categoria">Categoría:</label>
+              <input
+                type="text"
+                id="categoria"
+                name="categoria"
+                value
+                required
+              />
+              <label for="proveedor">Proveedor:</label>
+              <input
+                type="text"
+                id="proveedor"
+                name="proveedor"
+                value
+                required
+              />
+              <button type="button">Agregar Producto</button>
+            </fieldset>
+          </form>
+          <table id="tablaInventario">
+            <caption>
+              <strong>hoja de inventario</strong>
+            </caption>
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Categoría</th>
+                <th>proveedor</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Producto A</td>
+                <td>10</td>
+                <td>€20</td>
+                <td>Electrónicos</td>
+                <td>hiperdino</td>
+                <td>
+                  <button class="editar">Editar</button>
+                  <button class="eliminar">Eliminar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="estadisticasVentas">
+          <h2>Estadísticas de Ventas</h2>
+          <p>Aquí puedes ver gráficos y datos relevantes sobre las ventas.</p>
+          <canvas id="graficoVentas" width="400" height="200"></canvas>
+        </section>
+        <section id="configuracionTPV">
+          <form
+            action="/"
+            name="configuracionTPV"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+            accept-charset="UTF-8"
+            autocomplete="on"
+          >
+            <fieldset>
+              <legend><strong>Configuración del TPV</strong></legend>
+              <label for="idioma">Idioma:</label>
+              <select id="idioma" name="idioma">
+                <option value="es">Español</option>
+                <option value="en">Inglés</option>
+              </select>
+              <label for="moneda">Moneda:</label>
+              <select id="moneda" name="moneda">
+                <option value="usd">Dólar estadounidense</option>
+                <option value="eur">Euro</option>
+              </select>
+              <button type="button">Guardar Configuración</button>
+            </fieldset>
+          </form>
+        </section>
+        <section id="clientes">
+          <form
+            action="/"
+            name="clientes"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+            accept-charset="UTF-8"
+            autocomplete="on"
+          >
+            <fieldset>
+              <legend><strong>Agregar Cliente</strong></legend>
+              <label for="nombre">Nombre del cliente:</label>
+              <input type="text" id="nombre" name="nombre" value required />
+              <label for="address">Correo:</label>
+              <input type="email" id="address" name="address" required />
+              <button type="button">Agregar</button>
+            </fieldset>
+          </form>
+          <table id="tablaClientes">
+            <caption>
+              <strong>hoja de clientes</strong>
+            </caption>
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>juan</td>
+                <td>cliente1@email.com</td>
+                <td>
+                  <button class="editar">Editar</button>
+                  <button class="eliminar">Eliminar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="caja">
+          <form
+            action="/"
+            name="caja"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+            accept-charset="UTF-8"
+            autocomplete="on"
+          >
+            <fieldset>
+              <legend><strong>Realizar venta</strong></legend>
+              <label for="producto">Producto:</label>
+              <input
+                type="text"
+                id="producto"
+                name="producto"
+                placeholder="Buscar producto..."
+                required
+              />
+              <select id="productSelect" title="select"></select>
+              <label for="monto">Monto de venta:</label>
+              <input type="number" id="monto" name="monto" required />
+              <label for="metodoPago">Método de pago:</label>
+              <select id="metodoPago" name="metodoPago" required>
+                <option value=""></option>
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta</option>
+                <option value="maquinas">Maquinas Recreativas</option>
+                <option value="glovo">Glovo</option>
+              </select>
+              <button type="button">Registrar Venta</button>
+            </fieldset>
+          </form>
+        </section>
+        <section id="promocionesDescuentos">
+          <form
+            action="/"
+            name="promocionesDescuentos"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+            accept-charset="UTF-8"
+            autocomplete="on"
+          >
+            <fieldset>
+              <legend><strong>Promociones y Descuentos</strong></legend>
+              <label for="nombrePromocion">Nombre de la promoción:</label>
+              <input
+                type="text"
+                id="nombrePromocion"
+                name="nombrePromocion"
+                value
+                required
+              />
+              <label for="descuento">Descuento (%):</label>
+              <input type="number" id="descuento" name="descuento" required />
+              <button type="button">Agregar Promoción</button>
+            </fieldset>
+          </form>
+          <table id="tablaPromociones">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Descuento (%)</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Promoción 1</td>
+                <td>15</td>
+                <td>
+                  <button class="editar">Editar</button>
+                  <button class="eliminar">Eliminar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="reportesFinancieros">
+          <table id="reportesFinancieros">
+            <caption>
+              <strong>VENTAS DEL MES</strong>
+            </caption>
+            <p>NOMBRE:</p>
+            <p>CIF:</p>
+            <thead>
+              <tr>
+                <th>Dia</th>
+                <th>Tarjeta</th>
+                <th>Efectivo</th>
+                <th>Maquinas Recreativas</th>
+                <th>Glovo</th>
+                <th>Total TPV</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <button type="button" id="button">Generar Reporte</button>
+        </section>
+        <section id="gestionPersonal">
+          <form
+            action="/"
+            name="gestionPersonal"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+            accept-charset="UTF-8"
+            autocomplete="on"
+          >
+            <fieldset>
+              <legend><strong>Gestión del Personal</strong></legend>
+              <label for="nombreEmpleado">Nombre del empleado:</label>
+              <input
+                type="text"
+                id="nombreEmpleado"
+                name="nombreEmpleado"
+                value
+                required
+              />
+              <label for="puesto">Puesto:</label>
+              <input type="text" id="puesto" name="puesto" value required />
+              <button type="button">Agregar Empleado</button>
+            </fieldset>
+          </form>
+          <table id="tablaEmpleados">
+            <caption>
+              <strong>Lista De Empleados</strong>
+            </caption>
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Puesto</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Johan</td>
+                <td>Cocinero</td>
+                <td>
+                  <button class="editar">Editar</button>
+                  <button class="eliminar">Eliminar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="configuracionRestaurante">
+          <form
+            action="/"
+            name="configuracionRestaurante"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+            accept-charset="UTF-8"
+            autocomplete="on"
+          >
+            <fieldset>
+              <legend><strong>Configuración del Restaurante</strong></legend>
+              <label for="nombreRestaurante">Nombre del Restaurante:</label>
+              <input
+                type="text"
+                id="nombreRestaurante"
+                name="nombreRestaurante"
+                value
+                required
+              />
+              <label for="direccion">Dirección:</label>
+              <input
+                type="text"
+                id="direccion"
+                name="direccion"
+                value
+                required
+              />
+              <label for="tipoCocina">Tipo de Cocina:</label>
+              <input
+                type="text"
+                id="tipoCocina"
+                name="tipoCocina"
+                value
+                required
+              />
+              <button type="button" onclick="guardarConfiguracionRestaurante()">
+                Guardar Configuración
+              </button>
+            </fieldset>
+          </form>
+        </section>
+        <section id="ayuda">
+          <h2>Ayuda</h2>
+          <p>Aquí puedes encontrar recursos de ayuda y documentación.</p>
+          <button>Ver Documentación</button>
+          <ul>
+            <li><a href="faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="tutorial.html">Tutorial de Uso</a></li>
+          </ul>
+        </section>
+        <section id="contacto">
+          <form
+            action="/"
+            name="configuracionRestaurante"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+            accept-charset="UTF-8"
+            autocomplete="off"
+          >
+            <fieldset>
+              <legend><strong>Enviar mensajes</strong></legend>
+              <label for="nombreContacto">Nombre:</label>
+              <input
+                type="text"
+                id="nombreContacto"
+                name="nombreContacto"
+                value
+                required
+              />
+              <label for="emailContacto">Email:</label>
+              <input
+                type="email"
+                id="emailContacto"
+                name="emailContacto"
+                required
+              />
+              <label for="mensajeContacto">Mensaje:</label>
+              <textarea
+                id="mensajeContacto"
+                name="mensajeContacto"
+                rows="4"
+                maxlength="100"
+                value
+                required
+              ></textarea>
+              <button type="button">Enviar Mensaje</button>
+            </fieldset>
+          </form>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <ul class="social-icons">
+        <li>&copy; AMAJOH</li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.facebook.com/amajohan.041020/"
+            title="facebook"
+            ><img src="./ASSETS/facebook.webp" alt="facebook" loading="lazy"
+          /></a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.instagram.com/amajoh2021/"
+            title="instagram"
+            ><img src="./ASSETS/instagram.webp" alt="instagram" loading="lazy"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+    <script type="module" src="./JavasCript/sidebar.js"></script>
+    <script type="module" src="./JavasCript/showSection.js"></script>
+    <script type="module" src="./JavasCript/agregarProducto.js"></script>
+    <script type="module" src="./JavasCript/guardarConfiguracion.js"></script>
+    <script type="module" src="./JavasCript/registrarVenta.js"></script>
+    <script type="module" src="./JavasCript/formularios.js"></script>
+    <script type="module" src="./JavasCript/deleteProduct.js"></script>
+    <script type="module" src="./JavasCript/editProduct.js"></script>
+    <script type="module" src="./JavasCript/filterProducts.js"></script>
+    <script type="module" src="./JavasCript/seveRestaurantSettings.js"></script>
+    <script type="module" src="./JavasCript/mostrarDocumentacion.js"></script>
+    <script type="module" src="./JavasCript/enviarMensajes.js"></script>
+    <script type="module" src="./JavasCript/products.js" ></script>
+    <script type="module" src="./JavasCript/event.js"></script>
+  </body>
+</html>

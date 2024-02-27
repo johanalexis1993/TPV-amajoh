@@ -1,0 +1,11 @@
+main {
+  display: flex;
+  justify-content: space-between;
+  height: 75vh;
+}
+article {
+  flex: 1;
+  padding: var(--padding);
+  box-sizing: border-box;
+  overflow-y: auto;
+}

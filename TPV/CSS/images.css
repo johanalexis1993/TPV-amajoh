@@ -1,0 +1,7 @@
+img {
+  justify-content: center;
+  width: 1.87rem;
+  height: 1.87rem;
+  margin-left: var(--margin2);
+  border-radius: 0.4rem;
+}

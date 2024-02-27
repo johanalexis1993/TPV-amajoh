@@ -1,0 +1,11 @@
+h1 {
+  font-size: 2rem;
+}
+h1,
+h2 {
+  color: var(--fieldset-h1);
+  padding: var(--padding);
+}
+caption {
+  margin-bottom: 2%;
+}

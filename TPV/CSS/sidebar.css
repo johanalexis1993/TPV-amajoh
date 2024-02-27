@@ -1,0 +1,24 @@
+aside.hidden,
+section,
+#menu-toggle {
+  display: none;
+}
+aside {
+  flex-basis: 15.6rem;
+  height: calc(100% - 0%);
+  background-color: var(--background-sidebar);
+  overflow-y: auto;
+  transition: 0.3s;
+  box-shadow: 0.13rem 0 var(--margin2) var(--link-hover-color);
+  display: flex;
+  flex-direction: column;
+}
+aside a {
+  align-items: center;
+  padding: 0.93rem var(--padding);
+  color: var(--text-white);
+  transition: 0.3s;
+}
+aside a:hover {
+  background-color: var(--link-hover-color);
+}
